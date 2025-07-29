@@ -1,56 +1,35 @@
-// import { useRouter } from "next/router";
 import { Card } from "@/components/ui/card";
+import { notFound } from "next/navigation";
 
-const productImgs =  [
+const productImgs = [
   "/products/z1.png",
   "/products/z6.png",
   "/products/6d2.png",
   "/products/z8.png",
-  
   "/products/z5.png",
   "/products/z2.png",
   "/products/z3.png",
   "/products/z4.png",
-  
-  
   "/products/z7.png",
-
-
   "/products/1d.png",
   "/products/3d.png",
   "/products/2b.png",
-  
-  // "/products/5d.png",
-  
   "/products/1b.png",
   "/products/8b.png",
   "/products/2d.png",
   "/products/7b.png",
   "/products/4d.png",
-  // "/products/3b.png",
-
   "/products/4b.png",
   "/products/4b.png",
   "/products/6b.png",
-  
   "/products/5b.png",
   "/products/7d.png",
   "/products/1b.png",
-
-  
-  
-  // "/products/1.jpg",
-  
-  // "/products/4.jpg",
-  // "/products/3.jpg",
-
-    "/products/5b.png",
+  "/products/5b.png",
   "/products/6b.png",
   "/products/7b.png",
   "/products/2b.png",
-
   "/products/9b.png",
-  
   "/products/6.webp",
   "/products/7.webp",
   "/products/5.jfif",
@@ -66,12 +45,15 @@ const productImgs =  [
   "/products/8b.jfif",
   "https://discount-drugmart.com/wp-content/uploads/2024/05/View-All.png",
   "https://winternetweb.com/wp-content/uploads/2024/09/IMG_4223-scaled.jpeg",
+];
 
-]
-
-export default async function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage({ params }) {
   const id = parseInt(params.id, 10);
+
+  if (isNaN(id)) return notFound();
+
   const img = productImgs[id % productImgs.length];
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen p-8">
       <Card className="w-80 h-80 flex items-center justify-center mb-6">

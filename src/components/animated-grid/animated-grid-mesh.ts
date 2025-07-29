@@ -127,9 +127,9 @@ export function setupAnimatedGridMesh({
   }
 
   // Renderer
-  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+  renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
   renderer.setSize(width, height);
-  renderer.setClearColor(0x000000, 0);
+  renderer.setClearColor(params.bgColor, 1);
   renderer.domElement.style.position = "absolute";
   renderer.domElement.style.opacity = "1"; // FIX: make grid fully opaque
   renderer.domElement.style.top = "0";
@@ -139,7 +139,7 @@ export function setupAnimatedGridMesh({
 
   // --- Bloom Scene (background, glowy) ---
   bloomScene = new THREE.Scene();
-  bloomScene.background = new THREE.Color(params.bgColor);
+  // No need to set bloomScene.background, renderer handles bg color
 
   // --- Grid Scene (foreground, sharp) ---
   gridScene = new THREE.Scene();

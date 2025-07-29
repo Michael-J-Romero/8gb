@@ -18,7 +18,7 @@ export default function ProfileAside({ logoHue }: { logoHue: number }) {
             height: 70,
             backgroundSize: "cover",
           }}  
-            alt="music player"
+            // alt="music player"
             
           />
         </div>

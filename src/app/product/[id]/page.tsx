@@ -1,4 +1,4 @@
-import { useRouter } from "next/router";
+// import { useRouter } from "next/router";
 import { Card } from "@/components/ui/card";
 
 const productImgs =  [
@@ -69,7 +69,7 @@ const productImgs =  [
 
 ]
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+export default async function ProductPage({ params }: { params: { id: string } }) {
   const id = parseInt(params.id, 10);
   const img = productImgs[id % productImgs.length];
   return (

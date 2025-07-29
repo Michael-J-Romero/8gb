@@ -1,0 +1,5 @@
+/* Fade effect for navbar edges */
+.fade-edges {
+  -webkit-mask-image: linear-gradient(to right, transparent 5%, black 20%, black 80%, transparent 95%);
+  mask-image: linear-gradient(to right, transparent 5%, black 20%, black 80%, transparent 95%);
+}

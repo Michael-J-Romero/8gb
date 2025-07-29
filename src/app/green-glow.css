@@ -1,0 +1,27 @@
+@layer utilities { 
+  .purple-glow {
+    /* @apply border-2 border-purple-800; */
+    /* box-shadow: 0 0 24px 4px #a0f, 0 0 0 2px #222 inset, 0 0 8px #a0f, 0 0 0 2px #222 inset; */
+    border-radius: .6rem;
+      /* border-width: 2px; */
+       /* box-shadow: 0 0 8px #5100c3cf, 0 0 0 2px #222 inset; */
+  }
+  .green-glow {
+    @apply border-2 border-green-500;
+    /* box-shadow: 0 0 24px 4px #0f0, 0 0 0 2px #222 inset, 0 0 8px #0f0, 0 0 0 2px #222 inset; */
+    /* border-radius: 1.1rem; */
+      border-width: 1px;
+       box-shadow: 0 0 8px #00ff0078, 0 0 0 2px #222 inset;
+  }
+  .green-glow-bottom {
+    @apply border-b-2 border-green-500;
+    border-bottom-width: 1px;
+    box-shadow: 0px 1px 8px 0px #00ff0078 inset;
+  }
+  .green-glow-nav {
+    @apply border-b-2 border-green-500;
+    box-shadow: 0px 1px 8px 0px #00ff0078;
+    border-bottom-width: 1px;
+        background: rgba(0, 0, 0, 0.133);
+  }
+}

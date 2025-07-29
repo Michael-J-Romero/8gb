@@ -42,10 +42,13 @@ export default function Dive(props) {
 
   // Use page scroll (window)
   const { scrollYProgress } = useScroll();
-  // If slow mode, reduce scroll speed by mapping [0, 1], else use full range
-  const progress = scrollMode === 'slow'
-    ? useTransform(scrollYProgress, [0, 1], [0, 0.3])
-    : scrollYProgress;
+  // Always call useTransform to avoid conditional hook usage
+  const transformedProgress = useTransform(
+    scrollYProgress,
+    [0, 1],
+    scrollMode === 'slow' ? [0, 0.3] : [0, 1]
+  );
+  const progress = transformedProgress;
   // Add smoothing with useSpring, but make it very responsive
   const smoothProgress = useSpring(progress, { damping: 40, stiffness: 400 });
   // If reverse, swap the frame range (needed for non-scroll modes)

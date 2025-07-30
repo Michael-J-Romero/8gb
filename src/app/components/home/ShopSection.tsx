@@ -143,8 +143,8 @@ function Section3() {
     },
     {
       type: "success",
-      text: <><span className="text-purple-400">[SUCCESS]</span> <span className="text-green-200">Welcome to the Analog Afterlife. Select an option to continue:</span></>,
-      chunk: "[SUCCESS] Welcome to the Analog Afterlife. Select an option to continue:",
+      text: <><span className="text-purple-400">[SUCCESS]</span> <span className="text-green-200">Restoration complete. Welcome to the Analog Afterlife. Select an option to continue:</span></>,
+      chunk: "[SUCCESS] Restoration complete. Welcome to the Analog Afterlife. Select an option to continue:",
       prefix: null,
       delay: 300,
       typing: false, // system message
@@ -349,14 +349,14 @@ function Section3() {
               className="px-4 py-1 rounded bg-green-700 hover:bg-green-600 text-black font-bold border border-green-400 transition-colors duration-150 cursor-pointer text-[15px] shadow-green-400/30 shadow-md animate-fade-in-btn"
               style={{ animationDelay: '0.05s', animationFillMode: 'backwards', transformOrigin: 'center' }}
             >
-              Shop
+              Browse Shop
             </a>
             <a
               href="#donate"
               className="px-4 py-1 rounded bg-green-700 hover:bg-green-600 text-black font-bold border border-green-400 transition-colors duration-150 cursor-pointer text-[15px] shadow-green-400/30 shadow-md animate-fade-in-btn"
               style={{ animationDelay: '0.18s', animationFillMode: 'backwards', transformOrigin: 'center' }}
             >
-              Donate
+              Donate Parts
             </a>
             <style>{`
               @keyframes fade-in-btn {

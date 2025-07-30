@@ -9,7 +9,7 @@ export default function GlobalStyles() {
         width: 100%;
       }
       body, html {
-        background: none !important;
+        // background: none !important;
       }
       .myspace-profile {
         box-shadow: 0 0 24px 4px #0f0, 0 0 0 2px #222 inset;

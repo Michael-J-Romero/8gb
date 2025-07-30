@@ -1,11 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer utilities { 
+  .darkbg {
+    background:#00000060;
+    
+  }
   .purple-glow {
     /* @apply border-2 border-purple-800; */
     /* box-shadow: 0 0 24px 4px #a0f, 0 0 0 2px #222 inset, 0 0 8px #a0f, 0 0 0 2px #222 inset; */
     border-radius: .6rem;
       /* border-width: 2px; */
        /* box-shadow: 0 0 8px #5100c3cf, 0 0 0 2px #222 inset; */
-  }
+  } 
   .green-glow {
     @apply border-2 border-green-500;
     /* box-shadow: 0 0 24px 4px #0f0, 0 0 0 2px #222 inset, 0 0 8px #0f0, 0 0 0 2px #222 inset; */

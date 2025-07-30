@@ -1,9 +1,9 @@
 {
-  "starCount": 2650,
-  "starSize": 11,
+  "starCount": 1800,
+  "starSize": 7,
   "gridSize": 500,
   "divisions": 15,
-  "gridOpacity": 0,
+  "gridOpacity": 0.1,
   "gridRotationSpeed": 0.0031,
   "gridZSpeed": 0,
   "starRotationSpeed": 0.0004,
@@ -14,7 +14,7 @@
   "cameraFov": 88,
   "gridColor1": "#ababab",
   "gridColor2": "#3f0077",
-  "bgColor": "#3e0359",
+  "bgColor": "#0e0114",
   "starColor": "#e3d4e2",
   "planeWaviness": 2,
   "planeDistortion": 2,
@@ -30,7 +30,7 @@
   "cameraZRotRangeDeg": 320,
   "bloomThreshold": 0.01,
   "bloomStrength": 0.52,
-  "bloomRadius": 0.17,
+  "bloomRadius": 0.27,
   "bloomColor": "#b5a8f5",
   "gridRadius": 34,
   "gridRadiusX": 7,
@@ -54,6 +54,6 @@
   "chromaticAberration": true,
   "chromaticAberrationStrength": 0.0077,
   "chromaticAberrationOffsetX": 0.0031,
-  "chromaticAberrationOffsetY": 0.0033,
+  "chromaticAberrationOffsetY": -0.0032,
   "starShape": "cross"
 }

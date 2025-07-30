@@ -70,7 +70,7 @@ const imgs = [
   "https://winternetweb.com/wp-content/uploads/2024/09/IMG_4223-scaled.jpeg",
 
 ]
-let k8gb=`  ______   __________________ 
+let e8gb=`  ______   __________________ 
  /  __  \ /  _____/\______   \
  >      </   \  ___ |    |  _/
 /   --   \    \_\  \|    |   \
@@ -321,15 +321,15 @@ function Section3() {
   return (
     <div
       ref={ref}
-      className="relative w-full max-w-3xl mt-2 mb-8 rounded-lg border border-green-400 bg-black/90 shadow-lg overflow-hidden"
+      className="relative w-full max-w-3xl mt-2 mb-8 rounded-lg green-glow bg-black/90 shadow-lg overflow-hidden"
       style={{ fontFamily: 'monospace', boxShadow: '0 0 24px 2px #22c55e44' }}
     >
       {/* Fake window bar */}
-      <div className="flex items-center px-3 py-1 bg-green-900/60 border-b border-green-400">
+      <div className="flex items-center px-3 py-1 bg-green-900/60 border-b green-glow">
         <span className="w-3 h-3 rounded-full bg-red-500 mr-2 border border-red-900 shadow-inner"></span>
-        <span className="w-2 h-2 rounded-full bg-yellow-400 mr-2 border border-yellow-700 shadow-inner"></span>
-        <span className="w-2 h-2 rounded-full bg-green-500 border border-green-900 shadow-inner"></span>
-        <span className="ml-4 text-green-300 text-xs tracking-widest opacity-70">cmd.exe</span>
+        <span className="w-3 h-3 rounded-full bg-yellow-400 mr-2 border border-yellow-700 shadow-inner"></span>
+        <span className="w-3 h-3 rounded-full bg-green-500 border border-green-900 shadow-inner"></span>
+        <span className="ml-4 text-green-300 text-md tracking-widest opacity-70">Terminal - cmd.exe</span>
       </div>
       {/* Command prompt content */}
       <div className="p-5 text-green-300 text-[15px] min-h-[160px] bg-black font-mono">

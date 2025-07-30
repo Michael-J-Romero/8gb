@@ -50,7 +50,7 @@ export function AnimatedGridDevPanel({
       localStorage.setItem("animatedGridParams", JSON.stringify(defaultParams));
     } catch {}
   };
-
+return <></>
   return (
     <div className="fixed top-4 right-4 z-50">
       <button

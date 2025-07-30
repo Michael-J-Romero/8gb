@@ -60,7 +60,7 @@ const fakeEvents = [
 
 function EventsSection() {
   return (
-    <div className="w-full mt-6 green-glow">
+    <div className="w-full mt-6 green-glow darkbg">
       <div className="w-full green-glow-bottom
       text-green-200 text-left text-md   pl-4 py-1 mb-1 uppercase tracking-wide border-b-2 border-green-400 shadow-md flex items-center gap-2">
         <svg width="20" height="20" fill="none" viewBox="0 0 24 24" className="inline-block text-green-400"><path d="M7 2v2M17 2v2M3 7h18M5 11v6a2 2 0 002 2h10a2 2 0 002-2v-6M9 15h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
@@ -98,7 +98,7 @@ function EventsSection() {
 
 function Contact() {
   return (
-    <div className="w-full mt-6 green-glow">
+    <div className="w-full mt-6 green-glow darkbg">
       <div className="w-full green-glow-bottom
       text-green-200 text-left text-md   
       pl-4 py-1 mb-1

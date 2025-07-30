@@ -28,7 +28,7 @@ export function AnimatedGridDevPanel({
   // Load params from localStorage on mount
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("animatedGridParams");
+      const saved = false//localStorage.getItem("animatedGridParams");
       if (saved) {
         setParams((p) => ({ ...p, ...JSON.parse(saved) }));
       }

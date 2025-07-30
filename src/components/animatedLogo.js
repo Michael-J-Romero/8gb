@@ -245,7 +245,7 @@ export default function Dive(props) {
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            background: 'rgba(255,255,255,0.7)',
+            // background: 'rgba(255,255,255,0.7)',
             zIndex: 1,
           }}
         >

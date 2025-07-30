@@ -20,7 +20,7 @@ export default function AnimatedGridBackground() {
   // Dev panel state
   const getInitialParams = (): AnimatedGridParams => {
     try {
-      const saved = localStorage.getItem("animatedGridParams");
+      const saved = false//localStorage.getItem("animatedGridParams");
       if (saved) {
         return { ...defaultParams, ...JSON.parse(saved) };
       }
